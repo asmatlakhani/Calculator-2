@@ -1,7 +1,12 @@
-// var result = document.getElementById("result").value;
 function get_num(num) {
-  document.getElementById("result").value += num;
+  if (num === 'π') {
+    
+    document.getElementById("result").value += Math.PI;
+  } else {
+    document.getElementById("result").value += num;
+  }
 }
+
 function clearResult() {
   document.getElementById("result").value = "";
 }
@@ -16,3 +21,4 @@ function clear_num() {
     .getElementById("result")
     .value.slice(0, result.length - 1);
 }
+
